@@ -16,6 +16,12 @@
 		6A8A5F332898E9BC004C1D63 /* PrivateBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F322898E9BC004C1D63 /* PrivateBoardTests.swift */; };
 		6A8A5F3D2898E9BC004C1D63 /* PrivateBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F3C2898E9BC004C1D63 /* PrivateBoardUITests.swift */; };
 		6A8A5F3F2898E9BC004C1D63 /* PrivateBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F3E2898E9BC004C1D63 /* PrivateBoardUITestsLaunchTests.swift */; };
+		6A8A5F4E28998FC9004C1D63 /* YHAPIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F4D28998FC9004C1D63 /* YHAPIRoute.swift */; };
+		6A8A5F50289A3144004C1D63 /* RESTAPIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F4F289A3144004C1D63 /* RESTAPIRoute.swift */; };
+		6A8A5F52289A31D1004C1D63 /* RESTAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */; };
+		6A8A5F58289A436B004C1D63 /* YHAPIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */; };
+		6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */; };
+		6A8A5F5D289A4E8E004C1D63 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8A5F5C289A4E8E004C1D63 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		6A8A5F382898E9BC004C1D63 /* PrivateBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8A5F3C2898E9BC004C1D63 /* PrivateBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBoardUITests.swift; sourceTree = "<group>"; };
 		6A8A5F3E2898E9BC004C1D63 /* PrivateBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A8A5F4D28998FC9004C1D63 /* YHAPIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIRoute.swift; sourceTree = "<group>"; };
+		6A8A5F4F289A3144004C1D63 /* RESTAPIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTAPIRoute.swift; sourceTree = "<group>"; };
+		6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTAPIMethod.swift; sourceTree = "<group>"; };
+		6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIDateFormatter.swift; sourceTree = "<group>"; };
+		6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8A5F5D289A4E8E004C1D63 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,8 @@
 		6A8A5F1A2898E9BA004C1D63 /* PrivateBoard */ = {
 			isa = PBXGroup;
 			children = (
+				6A8A5F4C28998F8B004C1D63 /* Reference */,
+				6A8A5F4B28998F46004C1D63 /* Service */,
 				6A8A5F1B2898E9BA004C1D63 /* AppDelegate.swift */,
 				6A8A5F1D2898E9BA004C1D63 /* SceneDelegate.swift */,
 				6A8A5F1F2898E9BA004C1D63 /* ViewController.swift */,
@@ -127,6 +141,25 @@
 			path = PrivateBoardUITests;
 			sourceTree = "<group>";
 		};
+		6A8A5F4B28998F46004C1D63 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6A8A5F4D28998FC9004C1D63 /* YHAPIRoute.swift */,
+				6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */,
+				6A8A5F4F289A3144004C1D63 /* RESTAPIRoute.swift */,
+				6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */,
+				6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6A8A5F4C28998F8B004C1D63 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +176,9 @@
 			dependencies = (
 			);
 			name = PrivateBoard;
+			packageProductDependencies = (
+				6A8A5F5C289A4E8E004C1D63 /* Alamofire */,
+			);
 			productName = PrivateBoard;
 			productReference = 6A8A5F182898E9BA004C1D63 /* PrivateBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 6A8A5F0F2898E9BA004C1D63;
+			packageReferences = (
+				6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6A8A5F192898E9BA004C1D63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8A5F202898E9BA004C1D63 /* ViewController.swift in Sources */,
+				6A8A5F50289A3144004C1D63 /* RESTAPIRoute.swift in Sources */,
+				6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */,
+				6A8A5F4E28998FC9004C1D63 /* YHAPIRoute.swift in Sources */,
 				6A8A5F1C2898E9BA004C1D63 /* AppDelegate.swift in Sources */,
 				6A8A5F1E2898E9BA004C1D63 /* SceneDelegate.swift in Sources */,
+				6A8A5F58289A436B004C1D63 /* YHAPIDateFormatter.swift in Sources */,
+				6A8A5F52289A31D1004C1D63 /* RESTAPIMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +487,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +500,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,8 +517,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A8A5F5C289A4E8E004C1D63 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A8A5F102898E9BA004C1D63 /* Project object */;
 }
