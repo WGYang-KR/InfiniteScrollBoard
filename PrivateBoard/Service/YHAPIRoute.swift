@@ -57,8 +57,12 @@ enum YHAPIRoute: RESTAPIRoute{
     
     var params: [String : Any]? {
         switch self {
-        case .signIn:
-            return nil
+        case let .signIn(userLoginId, userLoginPassword):
+            let param: [String : Any] = [
+                    "userLoginId": userLoginId,
+                    "userLoginPassword": userLoginPassword
+            ]
+            return param
         case let .boardList(length, boardCn, boardSj, boardTy, creatDEnd, creatDStart, wrterLoginId, wrterNcnm, start):
             
             var creatDEndString: String = ""
