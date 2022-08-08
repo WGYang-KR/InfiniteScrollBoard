@@ -13,7 +13,7 @@ class YHAPIService {
     static let shared = YHAPIService()
     private init() { }
     
-    let baseURL = "https://yhapidev.teamfresh.co.kr"
+    let baseURL = BaseURL.YHAPI
     
     typealias requestJSONCallBack<T> = (_ decodedData: T?, _ responseSuccess:Bool) -> Void
     func requestJSON<T>(route: RESTAPIRoute, completion: @escaping requestJSONCallBack<T> ) where T: Codable {

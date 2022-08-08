@@ -1,0 +1,13 @@
+//
+//  BaseURL.swift
+//  PrivateBoard
+//
+//  Created by WG Yang on 2022/08/08.
+//
+
+import Foundation
+
+struct BaseURL {
+    static let YHAPI = "https://yhapidev.teamfresh.co.kr"
+    static let Image = "https://yhapidev.teamfresh.co.kr/content"
+}

@@ -26,7 +26,7 @@ enum YHAPIRoute: RESTAPIRoute{
      start* integer ($int32) 조회를 시작할 row number(지금 클릭한 페이지)
     */
     case boardList( length: Int32,
-                    boardCn: String,
+                    boardCn: String?,
                     boardSj: String?,
                     boardTy: String?,
                     creatDEnd: Date?,

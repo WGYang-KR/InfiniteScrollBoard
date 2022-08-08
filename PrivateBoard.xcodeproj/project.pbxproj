@@ -11,10 +11,16 @@
 		6A68AEB9289FED15007DE010 /* SingleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68AEB8289FED15007DE010 /* SingleResult.swift */; };
 		6A68AEBD28A00082007DE010 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68AEBC28A00082007DE010 /* SimpleAlert.swift */; };
 		6A87FD6528A0D0B6009D24DA /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD6428A0D0B6009D24DA /* homeVC.swift */; };
-		6A87FD6D28A0DD80009D24DA /* FreeBoardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD6B28A0DD80009D24DA /* FreeBoardTVC.swift */; };
-		6A87FD6E28A0DD80009D24DA /* FreeBoardTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A87FD6C28A0DD80009D24DA /* FreeBoardTVC.xib */; };
+		6A87FD6D28A0DD80009D24DA /* FreeBoardTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD6B28A0DD80009D24DA /* FreeBoardTC.swift */; };
+		6A87FD6E28A0DD80009D24DA /* FreeBoardTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */; };
 		6A87FD7428A0FFFF009D24DA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7328A0FFFF009D24DA /* Article.swift */; };
 		6A87FD7628A100BD009D24DA /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7528A100BD009D24DA /* ArticleList.swift */; };
+		6A87FD7828A1133D009D24DA /* FreeBoardTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */; };
+		6A87FD7A28A11363009D24DA /* FreeBoardTCVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */; };
+		6A87FD7D28A1163D009D24DA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6A87FD7C28A1163D009D24DA /* Kingfisher */; };
+		6A87FD7F28A118CE009D24DA /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7E28A118CE009D24DA /* BaseURL.swift */; };
+		6A87FD8128A128F4009D24DA /* FreeBoardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */; };
+		6A87FD8428A12AFF009D24DA /* PrettyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 6A87FD8328A12AFF009D24DA /* PrettyConstraints */; };
 		6A8A5F1C2898E9BA004C1D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F1B2898E9BA004C1D63 /* AppDelegate.swift */; };
 		6A8A5F1E2898E9BA004C1D63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F1D2898E9BA004C1D63 /* SceneDelegate.swift */; };
 		6A8A5F202898E9BA004C1D63 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F1F2898E9BA004C1D63 /* LoginVC.swift */; };
@@ -54,10 +60,14 @@
 		6A68AEB8289FED15007DE010 /* SingleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResult.swift; sourceTree = "<group>"; };
 		6A68AEBC28A00082007DE010 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		6A87FD6428A0D0B6009D24DA /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
-		6A87FD6B28A0DD80009D24DA /* FreeBoardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTVC.swift; sourceTree = "<group>"; };
-		6A87FD6C28A0DD80009D24DA /* FreeBoardTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeBoardTVC.xib; sourceTree = "<group>"; };
+		6A87FD6B28A0DD80009D24DA /* FreeBoardTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTC.swift; sourceTree = "<group>"; };
+		6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeBoardTC.xib; sourceTree = "<group>"; };
 		6A87FD7328A0FFFF009D24DA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		6A87FD7528A100BD009D24DA /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
+		6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableVM.swift; sourceTree = "<group>"; };
+		6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTCVM.swift; sourceTree = "<group>"; };
+		6A87FD7E28A118CE009D24DA /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableView.swift; sourceTree = "<group>"; };
 		6A8A5F182898E9BA004C1D63 /* PrivateBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8A5F1B2898E9BA004C1D63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8A5F1D2898E9BA004C1D63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A87FD7D28A1163D009D24DA /* Kingfisher in Frameworks */,
 				6A8A5F5D289A4E8E004C1D63 /* Alamofire in Frameworks */,
+				6A87FD8428A12AFF009D24DA /* PrettyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +119,11 @@
 		6A68AEB1289FC432007DE010 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6A87FD6A28A0DD40009D24DA /* CustomCell */,
+				6A87FD6B28A0DD80009D24DA /* FreeBoardTC.swift */,
+				6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */,
 				6A8A5F1F2898E9BA004C1D63 /* LoginVC.swift */,
 				6A87FD6428A0D0B6009D24DA /* homeVC.swift */,
+				6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				6A68AEB3289FC486007DE010 /* LoginVM.swift */,
+				6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */,
+				6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -138,15 +154,6 @@
 				6A68AEBC28A00082007DE010 /* SimpleAlert.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		6A87FD6A28A0DD40009D24DA /* CustomCell */ = {
-			isa = PBXGroup;
-			children = (
-				6A87FD6B28A0DD80009D24DA /* FreeBoardTVC.swift */,
-				6A87FD6C28A0DD80009D24DA /* FreeBoardTVC.xib */,
-			);
-			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		6A8A5F0F2898E9BA004C1D63 = {
@@ -213,6 +220,7 @@
 				6A8A5F4F289A3144004C1D63 /* RESTAPIRoute.swift */,
 				6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */,
 				6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */,
+				6A87FD7E28A118CE009D24DA /* BaseURL.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -242,6 +250,8 @@
 			name = PrivateBoard;
 			packageProductDependencies = (
 				6A8A5F5C289A4E8E004C1D63 /* Alamofire */,
+				6A87FD7C28A1163D009D24DA /* Kingfisher */,
+				6A87FD8328A12AFF009D24DA /* PrettyConstraints */,
 			);
 			productName = PrivateBoard;
 			productReference = 6A8A5F182898E9BA004C1D63 /* PrivateBoard.app */;
@@ -317,6 +327,8 @@
 			mainGroup = 6A8A5F0F2898E9BA004C1D63;
 			packageReferences = (
 				6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6A87FD7B28A1163D009D24DA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6A87FD8228A12AFF009D24DA /* XCRemoteSwiftPackageReference "PrettyConstraints" */,
 			);
 			productRefGroup = 6A8A5F192898E9BA004C1D63 /* Products */;
 			projectDirPath = "";
@@ -334,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A87FD6E28A0DD80009D24DA /* FreeBoardTVC.xib in Resources */,
+				6A87FD6E28A0DD80009D24DA /* FreeBoardTC.xib in Resources */,
 				6A8A5F282898E9BC004C1D63 /* LaunchScreen.storyboard in Resources */,
 				6A8A5F252898E9BC004C1D63 /* Assets.xcassets in Resources */,
 				6A8A5F232898E9BA004C1D63 /* Main.storyboard in Resources */,
@@ -365,10 +377,13 @@
 				6A8A5F202898E9BA004C1D63 /* LoginVC.swift in Sources */,
 				6A8A5F50289A3144004C1D63 /* RESTAPIRoute.swift in Sources */,
 				6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */,
+				6A87FD7828A1133D009D24DA /* FreeBoardTableVM.swift in Sources */,
 				6A8A5F4E28998FC9004C1D63 /* YHAPIRoute.swift in Sources */,
 				6A68AEB9289FED15007DE010 /* SingleResult.swift in Sources */,
 				6A87FD6528A0D0B6009D24DA /* homeVC.swift in Sources */,
-				6A87FD6D28A0DD80009D24DA /* FreeBoardTVC.swift in Sources */,
+				6A87FD7A28A11363009D24DA /* FreeBoardTCVM.swift in Sources */,
+				6A87FD7F28A118CE009D24DA /* BaseURL.swift in Sources */,
+				6A87FD6D28A0DD80009D24DA /* FreeBoardTC.swift in Sources */,
 				6A68AEBD28A00082007DE010 /* SimpleAlert.swift in Sources */,
 				6A8A5F1C2898E9BA004C1D63 /* AppDelegate.swift in Sources */,
 				6A68AEB4289FC486007DE010 /* LoginVM.swift in Sources */,
@@ -376,6 +391,7 @@
 				6A8A5F1E2898E9BA004C1D63 /* SceneDelegate.swift in Sources */,
 				6A87FD7628A100BD009D24DA /* ArticleList.swift in Sources */,
 				6A8A5F58289A436B004C1D63 /* YHAPIDateFormatter.swift in Sources */,
+				6A87FD8128A128F4009D24DA /* FreeBoardTableView.swift in Sources */,
 				6A8A5F52289A31D1004C1D63 /* RESTAPIMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +740,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6A87FD7B28A1163D009D24DA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		6A87FD8228A12AFF009D24DA /* XCRemoteSwiftPackageReference "PrettyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobiraft/PrettyConstraints";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 		6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -735,6 +767,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6A87FD7C28A1163D009D24DA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A87FD7B28A1163D009D24DA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6A87FD8328A12AFF009D24DA /* PrettyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A87FD8228A12AFF009D24DA /* XCRemoteSwiftPackageReference "PrettyConstraints" */;
+			productName = PrettyConstraints;
+		};
 		6A8A5F5C289A4E8E004C1D63 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6A8A5F5B289A4E8E004C1D63 /* XCRemoteSwiftPackageReference "Alamofire" */;

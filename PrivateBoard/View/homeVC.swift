@@ -9,7 +9,7 @@ import UIKit
 
 class homeVC: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var freeBoardTableView: UITableView!
+    @IBOutlet weak var freeBoardTableView: FreeBoardTableView!
     
     var curSegmentIndex = 0
 
@@ -19,8 +19,9 @@ class homeVC: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        freeBoardTableView.viewDidAppear()
     }
     
     
