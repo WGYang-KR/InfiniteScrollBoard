@@ -57,12 +57,9 @@ final class FreeBoardTableVM {
                 DispatchQueue.main.async { [unowned self] in
                     self.isFetchInProgress = false
                     if let response = decodedData, let articleList = response.data, articleList.count > 0 {
-                        if let newTotal = response.recordsTotal {
-                            self.total = Int(newTotal)
-                        }
                         self.articles.append(contentsOf: articleList)
-                        let indexPathsToReload = self.calculateIndexPathsToReload(from: articleList)
-                        self.delegate?.onFetchCompleted(with: indexPathsToReload)
+                        let indexPathsToInsert = self.calculateIndexPathsToInsert(from: articleList)
+                        self.delegate?.onFetchCompleted(with: indexPathsToInsert)
                     } else {
                         self.delegate?.onFetchFailed(with: "글 목록 끝")
                     }
@@ -75,7 +72,7 @@ final class FreeBoardTableVM {
     }
     
                                
-    private func calculateIndexPathsToReload(from newModerators: [Article]) -> [IndexPath] {
+    private func calculateIndexPathsToInsert(from newModerators: [Article]) -> [IndexPath] {
         let startIndex = articles.count - newModerators.count
         let endIndex = startIndex + newModerators.count
         return (startIndex..<endIndex).map { IndexPath(row: $0, section: 0) }

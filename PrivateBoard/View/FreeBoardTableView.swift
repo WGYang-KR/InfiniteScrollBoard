@@ -39,7 +39,7 @@ class FreeBoardTableView: UIView {
         //tableView.register(FreeBoardTC.self, forCellReuseIdentifier: CellIdentifiers.id)
         //tableView.isHidden = true
         tableView.dataSource = self
-        //tableView.delegate = self
+        tableView.delegate = self
         //tableView.estimatedRowHeight = 600
         //tableView.separatorStyle = .none
         //tableView.rowHeight = UITableView.automaticDimension
@@ -62,73 +62,44 @@ class FreeBoardTableView: UIView {
 extension FreeBoardTableView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Hints:- Initial count almost 1200+ it's shound not best practice. if you want to use this code as production then you should use 2D array. and keep 60-100 item only that array when scrolling down adding 20 item end of the array then you must be remove 20 item from beginning of the array. and when scrolling up adding 20 item from beginning of the array then remove 20 item from end of the array.
-        return viewModel.totalCount
+        return viewModel.currentCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: FreeBoardTC = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.id, for: indexPath) as? FreeBoardTC else { return UITableViewCell() }
-        
-        if isLoadingCell(for: indexPath) {
-           //TODO
-        } else {
-            cell.viewModel = viewModel.article(at: indexPath.row)
+        guard let cell: FreeBoardTC = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.id, for: indexPath) as? FreeBoardTC else {
+            print("셀 디큐 에러")
+            return UITableViewCell()
+            
         }
-        
+        cell.viewModel = viewModel.article(at: indexPath.row)
         return cell
     }
 }
 
-
-extension FreeBoardTableView: FreeBoardTableVMDelegate {
-    
-    func onFetchCompleted(with newIndexPathsToReload: [IndexPath]?) {
-        // 1
-//        guard let newIndexPathsToReload = newIndexPathsToReload else {
-            //LLSpinner.stop()
-            tableView.isHidden = false
-            tableView.reloadData()
-            return
-//        }
-//        let indexPathsToReload = visibleIndexPathsToReload(intersecting: newIndexPathsToReload)
-//        tableView.reloadRows(at: indexPathsToReload, with: .automatic)
-    }
-    
-    
-    func onFetchFailed(with reason: String) {
-        //LLSpinner.stop()
-        print("fail")
-        let title = "Warning"
-        let action = UIAlertAction(title: "OK", style: .default)
-        //displayAlert(with: title , message: reason, actions: [action])
-    }
-    
-    
-}
-
-private extension FreeBoardTableView {
-    func isLoadingCell(for indexPath: IndexPath) -> Bool {
-        print("viewing number\(indexPath.row) \(viewModel.totalCount) ,avabilalbe\(viewModel.currentCount)")
-        return indexPath.row >= viewModel.currentCount
-    }
-    
-    func visibleIndexPathsToReload(intersecting indexPaths: [IndexPath]) -> [IndexPath] {
-        let indexPathsForVisibleRows = tableView.indexPathsForVisibleRows ?? []
-        let indexPathsIntersection = Set(indexPathsForVisibleRows).intersection(indexPaths)
-        return Array(indexPathsIntersection)
-    }
-}
-
-extension FreeBoardTableView: UITableViewDataSourcePrefetching {
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        if indexPaths.contains(where: isLoadingCell) {
+extension FreeBoardTableView:UITableViewDelegate {
+  
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if self.tableView.contentOffset.y > tableView.contentSize.height-tableView.bounds.size.height {
             viewModel.fetchMovies()
         }
     }
 }
 
 
-
+extension FreeBoardTableView: FreeBoardTableVMDelegate {
+    
+    func onFetchCompleted(with newIndexPathsToInsert: [IndexPath]?) {
+        guard let newIndexPathsToInsert = newIndexPathsToInsert else { return }
+        print("insertdIndexPath: \(newIndexPathsToInsert.first!.row)~\(newIndexPathsToInsert.last!.row)")
+        tableView.insertRows(at: newIndexPathsToInsert, with: .none)
+    }
+    
+    func onFetchFailed(with reason: String) {
+        print(reason)
+    }
+    
+    
+}
 
 
 
