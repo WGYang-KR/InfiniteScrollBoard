@@ -28,7 +28,6 @@ class YHAPIService {
                     //통신성공
                     //디코딩
                     do {
-                        print(String(bytes: jsonData, encoding: String.Encoding.utf8))
                         let decodedData = try JSONDecoder().decode(T.self, from: jsonData)
                         completion(decodedData, true)
                     }
