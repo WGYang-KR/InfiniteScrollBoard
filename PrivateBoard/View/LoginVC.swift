@@ -60,6 +60,12 @@ class LoginVC: UIViewController {
             guard let self = self else {return}
             if status {
                 //다음 화면 이동.
+                guard let window = self.view.window else { return }
+                let storyBoard = UIStoryboard(name:"Main", bundle: nil)
+                let mainVC = storyBoard.instantiateViewController(identifier: "mainTabViewController")
+                window.rootViewController = mainVC
+                UIView.transition(with: window, duration: 1, options: .transitionCrossDissolve, animations: nil, completion: nil)
+      
             } else {
                 //안내창 출력.
                 SimpleAlert.alert(self, "로그인실패", message, nil)

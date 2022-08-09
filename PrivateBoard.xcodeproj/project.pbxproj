@@ -36,6 +36,7 @@
 		6A8A5F58289A436B004C1D63 /* YHAPIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */; };
 		6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */; };
 		6A8A5F5D289A4E8E004C1D63 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8A5F5C289A4E8E004C1D63 /* Alamofire */; };
+		6ACFE63728A2205E00E3D426 /* MainTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTAPIMethod.swift; sourceTree = "<group>"; };
 		6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIDateFormatter.swift; sourceTree = "<group>"; };
 		6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIService.swift; sourceTree = "<group>"; };
+		6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTapBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				6A8A5F1F2898E9BA004C1D63 /* LoginVC.swift */,
 				6A87FD6428A0D0B6009D24DA /* homeVC.swift */,
 				6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */,
+				6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				6A8A5F50289A3144004C1D63 /* RESTAPIRoute.swift in Sources */,
 				6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */,
 				6A87FD7828A1133D009D24DA /* FreeBoardTableVM.swift in Sources */,
+				6ACFE63728A2205E00E3D426 /* MainTapBarController.swift in Sources */,
 				6A8A5F4E28998FC9004C1D63 /* YHAPIRoute.swift in Sources */,
 				6A68AEB9289FED15007DE010 /* SingleResult.swift in Sources */,
 				6A87FD6528A0D0B6009D24DA /* homeVC.swift in Sources */,
