@@ -8,6 +8,6 @@
 import Foundation
 
 struct BaseURL {
-    static let YHAPI = "https://yhapidev.teamfresh.co.kr"
-    static let Image = "https://yhapidev.teamfresh.co.kr/content"
+    static let YHAPI = ""
+    static let Image = ""
 }
