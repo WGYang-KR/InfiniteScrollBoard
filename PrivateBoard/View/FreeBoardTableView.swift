@@ -14,7 +14,7 @@ class FreeBoardTableView: UIView {
         static let id = "articleCell"
     }
     
-    var viewModel: FreeBoardTableVM!
+    var viewModel: FreeBoardTableViewModel!
  
     var tableView : UITableView = {
         var tableView = UITableView()
@@ -45,7 +45,7 @@ class FreeBoardTableView: UIView {
         //tableView.rowHeight = UITableView.automaticDimension
         //tableView.prefetchDataSource = self
         
-        viewModel = FreeBoardTableVM(delegate: self)
+        viewModel = FreeBoardTableViewModel(delegate: self)
         
         
     }

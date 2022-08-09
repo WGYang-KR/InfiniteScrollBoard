@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -15,27 +15,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="PrivateBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-1y-hTb">
-                                <rect key="frame" x="20" y="149" width="335" height="369"/>
+                                <rect key="frame" x="20" y="278.66666666666669" width="388" height="369.00000000000006"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="rYo-F7-tue">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="102"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="102"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디(appdev)" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="jBa-NV-xYk">
-                                        <rect key="frame" x="0.0" y="109" width="335" height="34"/>
+                                        <rect key="frame" x="0.0" y="109" width="388" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호(Timf1234)" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="cDi-dE-ri8">
-                                        <rect key="frame" x="0.0" y="150" width="335" height="34"/>
+                                        <rect key="frame" x="0.0" y="150" width="388" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icz-zg-DC0">
-                                        <rect key="frame" x="0.0" y="191" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="191" width="388" height="50"/>
                                         <color key="backgroundColor" name="color_login"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uIp-oQ-sdw"/>
@@ -50,10 +50,10 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JK-ys-3EQ">
-                                        <rect key="frame" x="0.0" y="248" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="247.99999999999994" width="388" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="353-94-ady">
-                                                <rect key="frame" x="50" y="10" width="235" height="30"/>
+                                                <rect key="frame" x="76.666666666666686" y="10" width="235" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBx-Sy-cZ6">
                                                         <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
@@ -61,9 +61,12 @@
                                                         <state key="normal" title="아이디 찾기">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapFindIDButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dv-0Z-A1m"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="zBD-ED-5tC">
-                                                        <rect key="frame" x="76" y="5" width="2" height="20"/>
+                                                        <rect key="frame" x="75.999999999999986" y="5" width="2" height="20"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="6tK-oW-xaP"/>
@@ -71,11 +74,14 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-9u-H2G">
-                                                        <rect key="frame" x="85" y="0.0" width="82" height="30"/>
+                                                        <rect key="frame" x="84.999999999999986" y="0.0" width="82.000000000000014" height="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="비밀번호 찾기">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapFindPWButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5H2-aL-cjv"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="xFH-Iv-Nv5">
                                                         <rect key="frame" x="174" y="5" width="2" height="20"/>
@@ -92,6 +98,9 @@
                                                         <state key="normal" title="회원가입">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapJoinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qv6-Mg-Gaw"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -103,9 +112,12 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-Yy-ZQs">
-                                        <rect key="frame" x="0.0" y="305" width="335" height="64"/>
+                                        <rect key="frame" x="0.0" y="304.99999999999994" width="388" height="64"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="kakao_login"/>
+                                        <connections>
+                                            <action selector="tapKakaoLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7f-Jx-370"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -140,7 +152,7 @@
             <objects>
                 <viewController id="Clx-1b-dZG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vf2-mj-Qjt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6UJ-D2-vNv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -158,7 +170,7 @@
             <objects>
                 <viewController id="tOp-nR-N8P" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QOI-Yr-cwQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="moU-Mh-cJ1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -176,7 +188,7 @@
             <objects>
                 <viewController id="R7J-BL-2vp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RIh-q1-Y4X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Zje-H0-1kQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -194,7 +206,7 @@
             <objects>
                 <viewController id="htg-sd-SNa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uqk-Ha-Ybe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="UU7-Fp-kCX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -207,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1711" y="752"/>
         </scene>
-        <!--Main Tap Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="WSV-9O-2OC">
             <objects>
-                <tabBarController storyboardIdentifier="mainTabViewController" id="JgC-dE-40L" customClass="MainTapBarController" customModule="PrivateBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabViewController" id="JgC-dE-40L" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Ekx-i0-uzY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -234,11 +246,11 @@
             <objects>
                 <viewController id="Ha2-56-gjx" customClass="homeVC" customModule="PrivateBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYO-y0-JhT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-SO-oVj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="게시판" id="CNP-35-xib">
@@ -252,17 +264,17 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAT-dM-9vT" userLabel="NaviBottomLineView">
-                                <rect key="frame" x="0.0" y="44" width="375" height="5"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="cno-se-RQj"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-Hc-u6f" userLabel="MenuView">
-                                <rect key="frame" x="0.0" y="49" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="93" width="428" height="44"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSb-FK-bZ5" userLabel="MenuBottomLineView">
-                                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="43" width="428" height="1"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="OkX-tY-x6q"/>
@@ -280,12 +292,13 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OB-GH-FnK">
-                                        <rect key="frame" x="310" y="5" width="50" height="33"/>
+                                        <rect key="frame" x="363" y="5" width="50" height="33"/>
                                         <color key="backgroundColor" name="color_writeButton"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="klW-lz-aTm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="글쓰기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,7 +326,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-Dg-TWY" customClass="FreeBoardTableView" customModule="PrivateBoard" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="93" width="375" height="525"/>
+                                <rect key="frame" x="0.0" y="137" width="428" height="706"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -345,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0E-Xu-8Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="721"/>
+            <point key="canvasLocation" x="925.23364485981301" y="720.51835853131752"/>
         </scene>
     </scenes>
     <resources>

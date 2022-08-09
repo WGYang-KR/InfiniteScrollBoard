@@ -12,7 +12,7 @@ protocol FreeBoardTableVMDelegate: AnyObject {
     func onFetchFailed(with reason: String)
 }
 
-final class FreeBoardTableVM {
+final class FreeBoardTableViewModel {
     
     private var apiService = YHAPIService.shared
     private weak var delegate: FreeBoardTableVMDelegate?

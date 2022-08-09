@@ -73,6 +73,23 @@ class LoginVC: UIViewController {
         }
         loginVM.loginWith(userId, andPassword: password)
     }
+    
+    @IBAction func tapFindIDButton(_ sender: Any) {
+        SimpleAlert.alert(self, "아이디 찾기","준비중", nil)
+    }
+    
+    @IBAction func tapFindPWButton(_ sender: Any) {
+        SimpleAlert.alert(self, "비밀번호 찾기", "준비중", nil)
+    }
+    
+    @IBAction func tapJoinButton(_ sender: Any) {
+        SimpleAlert.alert(self, "회원가입", "준비중", nil)
+    }
+    
+    @IBAction func tapKakaoLoginButton(_ sender: Any) {
+        SimpleAlert.alert(self, "카카오로그인", "준비중" , nil)
+    }
+    
 }
 
 

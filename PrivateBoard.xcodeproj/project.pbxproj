@@ -15,7 +15,7 @@
 		6A87FD6E28A0DD80009D24DA /* FreeBoardTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */; };
 		6A87FD7428A0FFFF009D24DA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7328A0FFFF009D24DA /* Article.swift */; };
 		6A87FD7628A100BD009D24DA /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7528A100BD009D24DA /* ArticleList.swift */; };
-		6A87FD7828A1133D009D24DA /* FreeBoardTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */; };
+		6A87FD7828A1133D009D24DA /* FreeBoardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7728A1133D009D24DA /* FreeBoardTableViewModel.swift */; };
 		6A87FD7A28A11363009D24DA /* FreeBoardTCVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */; };
 		6A87FD7D28A1163D009D24DA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6A87FD7C28A1163D009D24DA /* Kingfisher */; };
 		6A87FD7F28A118CE009D24DA /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A87FD7E28A118CE009D24DA /* BaseURL.swift */; };
@@ -36,7 +36,6 @@
 		6A8A5F58289A436B004C1D63 /* YHAPIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */; };
 		6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */; };
 		6A8A5F5D289A4E8E004C1D63 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8A5F5C289A4E8E004C1D63 /* Alamofire */; };
-		6ACFE63728A2205E00E3D426 /* MainTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +64,7 @@
 		6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeBoardTC.xib; sourceTree = "<group>"; };
 		6A87FD7328A0FFFF009D24DA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		6A87FD7528A100BD009D24DA /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
-		6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableVM.swift; sourceTree = "<group>"; };
+		6A87FD7728A1133D009D24DA /* FreeBoardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableViewModel.swift; sourceTree = "<group>"; };
 		6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTCVM.swift; sourceTree = "<group>"; };
 		6A87FD7E28A118CE009D24DA /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardTableView.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		6A8A5F51289A31D1004C1D63 /* RESTAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTAPIMethod.swift; sourceTree = "<group>"; };
 		6A8A5F57289A436B004C1D63 /* YHAPIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIDateFormatter.swift; sourceTree = "<group>"; };
 		6A8A5F59289A4B33004C1D63 /* YHAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHAPIService.swift; sourceTree = "<group>"; };
-		6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTapBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +121,9 @@
 			children = (
 				6A87FD6B28A0DD80009D24DA /* FreeBoardTC.swift */,
 				6A87FD6C28A0DD80009D24DA /* FreeBoardTC.xib */,
+				6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */,
 				6A8A5F1F2898E9BA004C1D63 /* LoginVC.swift */,
 				6A87FD6428A0D0B6009D24DA /* homeVC.swift */,
-				6A87FD8028A128F4009D24DA /* FreeBoardTableView.swift */,
-				6ACFE63628A2205E00E3D426 /* MainTapBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,9 +131,9 @@
 		6A68AEB2289FC460007DE010 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6A68AEB3289FC486007DE010 /* LoginVM.swift */,
-				6A87FD7728A1133D009D24DA /* FreeBoardTableVM.swift */,
+				6A87FD7728A1133D009D24DA /* FreeBoardTableViewModel.swift */,
 				6A87FD7928A11363009D24DA /* FreeBoardTCVM.swift */,
+				6A68AEB3289FC486007DE010 /* LoginVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -380,8 +377,7 @@
 				6A8A5F202898E9BA004C1D63 /* LoginVC.swift in Sources */,
 				6A8A5F50289A3144004C1D63 /* RESTAPIRoute.swift in Sources */,
 				6A8A5F5A289A4B33004C1D63 /* YHAPIService.swift in Sources */,
-				6A87FD7828A1133D009D24DA /* FreeBoardTableVM.swift in Sources */,
-				6ACFE63728A2205E00E3D426 /* MainTapBarController.swift in Sources */,
+				6A87FD7828A1133D009D24DA /* FreeBoardTableViewModel.swift in Sources */,
 				6A8A5F4E28998FC9004C1D63 /* YHAPIRoute.swift in Sources */,
 				6A68AEB9289FED15007DE010 /* SingleResult.swift in Sources */,
 				6A87FD6528A0D0B6009D24DA /* homeVC.swift in Sources */,
