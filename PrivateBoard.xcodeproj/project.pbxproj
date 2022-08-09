@@ -183,7 +183,6 @@
 				6A68AEB5289FEBD7007DE010 /* Model */,
 				6A68AEB2289FC460007DE010 /* ViewModel */,
 				6A68AEB1289FC432007DE010 /* View */,
-				6A8A5F4C28998F8B004C1D63 /* Reference */,
 				6A8A5F4B28998F46004C1D63 /* Service */,
 				6A8A5F1B2898E9BA004C1D63 /* AppDelegate.swift */,
 				6A8A5F1D2898E9BA004C1D63 /* SceneDelegate.swift */,
@@ -223,13 +222,6 @@
 				6A87FD7E28A118CE009D24DA /* BaseURL.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		6A8A5F4C28998F8B004C1D63 /* Reference */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
